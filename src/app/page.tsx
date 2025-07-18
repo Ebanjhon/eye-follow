@@ -25,10 +25,10 @@ export default function Home() {
     let animationFrameId: number;
     const handleMouseMove = (event: MouseEvent) => {
       animationFrameId = requestAnimationFrame(() => {
-        let dx = event.clientX - centerRef.current.x;
-        let dy = event.clientY - centerRef.current.y;
-        let radian = Math.atan2(dy, dx);
-        let rot = (radian * 180) / Math.PI + 90;
+        const dx = event.clientX - centerRef.current.x;
+        const dy = event.clientY - centerRef.current.y;
+        const radian = Math.atan2(dy, dx);
+        const rot = (radian * 180) / Math.PI + 90;
         setEyeDeg(rot);
       });
     };
