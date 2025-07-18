@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Home() {
   const boxRef = useRef<HTMLDivElement>(null);
-  const [position, setPosition] = useState({ x: 0, y: 0 }); // vị trí x và y của chuột
   const centerRef = useRef({ x: 0, y: 0 });// điểm nằm giữa của mắt
   const [eyeDeg, setEyeDeg] = useState(0); // độ của măt
 
